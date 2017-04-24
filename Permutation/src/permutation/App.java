@@ -22,12 +22,12 @@ public class App {
 			permutation.runPermutation(elements, elements.length);
 			permutation.printPermutation();
 			
+			System.out.println("!] DONE.");
+			
 		}else{
 			System.err.println("Error. INCORRECT INPUT ERROR.");
 		}
 
-		System.out.println("!] DONE.");
-		
 	}
 
 	private static boolean checkingInputString(String input) {
@@ -38,6 +38,7 @@ public class App {
 			for(int j=0; j<i; j++){
 				if(temp == input.charAt(j)){
 					result = false;
+					break;
 				}
 			}
 		}
