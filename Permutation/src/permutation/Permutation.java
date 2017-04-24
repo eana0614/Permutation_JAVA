@@ -13,12 +13,7 @@ public class Permutation {
 	public void runPermutation(char[] elements, int n) {
 		
 		if(n == 1){
-			String ele ="";
-			
-			for(int i=0; i<elements.length; i++){
-				ele = ele+elements[i];	
-			}
-			permutationElement.add(ele);
+			permutationElement.add(String.valueOf(elements));
 		}
 		
 		for(int i=0; i<n; i++){
